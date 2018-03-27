@@ -1,0 +1,64 @@
+
+<body class="hold-transition register-page">
+  <div class="register-box">
+    <div class="register-logo">
+      <a href="#"><b>My Education</b>Board</a>
+    </div>
+  
+    <div class="register-box-body">
+      <p class="login-box-msg">My Education Board</p>
+  
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+          <div class="form-group">
+              <label for="firstName">First Name</label>
+    <input type="text" class="form-control" id="firstName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="model.firstName" name="firstName" #firstName="ngModel">
+              <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
+                  <div [hidden]="!firstName.hasError('required')">First Name is required</div>
+                  <div [hidden]="!firstName.hasError('pattern')">Only alphabetsallowed</div>
+               </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="model.lastName" name="lastName" #lastName="ngModel">
+                <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
+                    <div [hidden]="!lastName.hasError('required')">Last Name is required</div>
+                    <div [hidden]="!lastName.hasError('pattern')">Only alphabetsallowed</div>
+                 </div>
+              </div>
+                <div class="form-group">
+                  <label for="username">User Name</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username" #username="ngModel">
+                  <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+                      <div [hidden]="!username.hasError('required')">Last Name is required</div>
+                      
+                   </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Password</label>
+                    <input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password"  #password="ngModel">
+                    <div [hidden]="password.valid || password.pristine"
+                         class="alert alert-danger">
+                      Password is required
+                    </div> 
+                  </div>
+
+      <div class="row">
+      <div class="col-md-6">
+          <button type="submit" [disabled]="loading" class="btn btn-primary btn-block btn-flat" [disabled]="!loginForm.form.valid">Register<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /></button>
+           
+           </div>
+           <div class="col-md-6">
+          <a [routerLink]="['/app-login']" class="btn btn-link">Cancel</a>
+      </div>  
+    </div>
+     
+  </form>
+  
+  <app-sociallogin></app-sociallogin>
+  
+      <a routerLink="/app-login" class="text-center">I already have a membership</a>
+    </div>
+  
+  </div>
+ 
+  </body>

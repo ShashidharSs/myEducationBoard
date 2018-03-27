@@ -1,0 +1,25 @@
+<div *ngIf="!user" class="card text-center">
+<div class="social-auth-links text-center">
+    <p>- OR -</p>
+    
+    <a class="btn btn-block btn-social btn-google btn-flat" (click)="signInWithGoogle()"><i class="fa fa-google-plus"></i> Sign in using
+      Google+</a>
+    <a  class="btn btn-block btn-social btn-facebook btn-flat" (click)="signInWithFB()"><i class="fa fa-facebook"></i> Sign in using
+      Facebook</a>
+  </div>
+</div>
+
+<div *ngIf="user" class="card text-center">
+  <h6 class="card-header">
+    Social Login Demo
+  </h6>
+  <div class="card-block"></div>
+  <img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">
+  <div class="card-block">
+    <h4 class="card-title">{{ user.name }}</h4>
+    <p class="card-text">{{ user.email }}</p>
+  </div>
+  <div class="card-block">
+    <button class="btn btn-danger" (click)="signOut()">Sign out</button>
+  </div>
+</div>

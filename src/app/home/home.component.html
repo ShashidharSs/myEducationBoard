@@ -1,0 +1,249 @@
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+    
+      <!-- Main Header -->
+      <header class="main-header">
+    
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>E</b>du</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>MyEducation</b>Board</span>
+        </a>
+    
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+  
+              <li>
+                <a><i class="fa fa-user"></i>  {{currentUser.firstName}}</a>
+               
+              </li>
+              <li>
+                <a [routerLink]="['/app-login']"><i class="fa fa-sign-out"></i> logout</a>
+               
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+    
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            
+          <ul class="sidebar-menu">
+           <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a [routerLink]="['dashbordPage1']"><i class="fa fa-tachometer"></i> <span>Dash Board1</span></a></li>
+           
+            <li class="treeview">
+              <a href="#"><i class="fa fa-sitemap"></i> <span>My Education</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+               
+                <li><a [routerLink]="['dashbordPage2']"><i class="fa fa-user"></i> <span>Dash Board2</span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+    
+        <!-- Main content -->
+        <div class="content-wrapper">
+		<section class="content-header">
+    <h1>
+      Dashboard 1
+      <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Dashboard 1</li>
+    </ol>
+  </section>
+  <section class="content">
+<div class="row">
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-aqua">
+        <div class="inner">
+          <h3>10</h3>
+
+          <p>Pending Request</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-bag"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-green">
+        <div class="inner">
+          <h3>53</h3>
+
+          <p>Page Views</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-stats-bars"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-yellow">
+        <div class="inner">
+          <h3>44</h3>
+
+          <p>Requests</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-person-add"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-red">
+        <div class="inner">
+          <h3>65</h3>
+
+          <p>Followers</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-pie-graph"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+  </div>
+</section>
+
+        <section class="content">
+             <router-outlet></router-outlet>
+        </section>
+        <!-- /.content -->
+      </div>
+    
+      <!-- /.content-wrapper -->
+    
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+          My Education Board
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2018 <a href="#">Company</a>.</strong> All rights reserved.
+      </footer>
+    
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+          <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Home tab content -->
+          <div class="tab-pane active" id="control-sidebar-home-tab">
+            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+    
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+    
+                    <p>Will be 23 on April 24th</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- /.control-sidebar-menu -->
+    
+            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Custom Template Design
+                    <span class="pull-right-container">
+                      <span class="label label-danger pull-right">70%</span>
+                    </span>
+                  </h4>
+    
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- /.control-sidebar-menu -->
+    
+          </div>
+          <!-- /.tab-pane -->
+          <!-- Stats tab content -->
+          <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+          <!-- /.tab-pane -->
+          <!-- Settings tab content -->
+          <div class="tab-pane" id="control-sidebar-settings-tab">
+            <form method="post">
+              <h3 class="control-sidebar-heading">General Settings</h3>
+    
+              <div class="form-group">
+                <label class="control-sidebar-subheading">
+                  Report panel usage
+                  <input type="checkbox" class="pull-right" checked>
+                </label>
+    
+                <p>
+                  Some information about this general settings option
+                </p>
+              </div>
+              <!-- /.form-group -->
+            </form>
+          </div>
+          <!-- /.tab-pane -->
+        </div>
+      </aside>
+  
+      <div class="control-sidebar-bg"></div>
+    </div>
+  
+    </body>
+
+<!-- <div class="col-md-6 col-md-offset-3">
+  <h1>Hi {{currentUser.firstName}}!</h1>
+
+  <h3>All registered users:</h3>
+  <ul>
+      <li *ngFor="let user of users">
+          {{user.username}} ({{user.firstName}} {{user.lastName}})
+          - <a (click)="deleteUser(user.id)">Delete</a>
+      </li>
+  </ul>
+  <p><a [routerLink]="['/app-login']">Logout</a></p>
+</div> -->

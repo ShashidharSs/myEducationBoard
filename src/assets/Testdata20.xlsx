@@ -3,4 +3,4 @@ TC_001_createAccount	To check if we can create accou sutccessfully	yes	1	1
 TC_02_createContact	To check if we can create contact	yes	1	1
 TC_03_createLocation	To check if we can create location	no	1	1
 TC_04_CreateAndIssuePolicy	To check if we can create policy	no	1	1
-TC_05_VerifyDriverRoleDetails	To Check invalid driver details	yes	1	1
+TC_05_VerifyDriverRoleDetails	To Check invalid driver details	no	1	1

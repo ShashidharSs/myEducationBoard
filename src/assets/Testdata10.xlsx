@@ -1,5 +1,5 @@
 testname	testdescription	execute	priority	count
-TC_000_CoreSuiteLogin	To Check if we can login successfully	no	1	1
+TC_000_CoreSuiteLogin	To Check if we can login successfully	yes	1	1
 TC_001_Add_Rider	To Check if we can login successfully	no	1	1
 TC_002_Payment_UL_Policy	To Check if we can login successfully	yes	1	1
 TC_003_POlicyCreation	To Check if we can login successfully	yes	1	1

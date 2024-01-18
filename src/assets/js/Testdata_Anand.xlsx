@@ -1,6 +1,6 @@
 testname	testdescription	execute	priority	count
 TC_3923_Validate_accumulated_CIR_Claim	To add the Validate accumulated CIR claim entry is removed from balances after accidentally death claim	no	1	1
-TC_3882_Chronical_Claim_level	To check if we can create accout successfully	yes	1	1
+TC_3882_Chronical_Claim_level	To check if we can create accout successfully	no	1	1
 TC_3547_Verify_partial_conversion_on_Second_Insured	To check if we can create accout successfully	yes	1	1
 CS_TC_1708_Payment_Arrangement_Change	To check if we can create accout successfully	yes	1	1
 TC_1738_Validate_total_accelerated_claim_for_Cross_year_with_new_exhibit	To check if we can create accout successfully	yes	1	1

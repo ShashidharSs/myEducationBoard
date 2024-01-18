@@ -16,4 +16,4 @@ TC_2858_Attempt_Retrive_Agent	To check if we can create accout successfully	yes	
 TC_5810_Free_Look_Cancellation_SafeGuard	To check if we can create accout successfully	yes	1	1
 Adding_terminated_Participating_agent_TC_5345	To check if we can create accout successfully	yes	1	1
 Validate_Override_def_Accelerated_death_claim	To check if we can create accout successfully	yes	1	1
-TC_3573_Validate_stimulate_APD	To check if we can create accout successfully	no	1	1
+TC_3573_Validate_stimulate_APD	To check if we can create accout successfully	yes	1	1
